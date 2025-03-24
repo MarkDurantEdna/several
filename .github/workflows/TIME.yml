@@ -1,0 +1,19 @@
+name: TIME
+on: 
+  push:
+    branches: [ "main" ]
+jobs:
+  time1:
+    runs-on: windows-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: time1
+        continue-on-error: true
+        run: ${{ secrets.TIME1L }}
+  time2:
+    runs-on: windows-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: time2
+        continue-on-error: true
+        run: ${{ secrets.TIME2 }}
