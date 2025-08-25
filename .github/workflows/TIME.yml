@@ -4,13 +4,13 @@ on:
     branches: [ "main" ]
 jobs:
   time1:
-    runs-on: windows-latest
+    runs-on: windows-2025
     steps: 
       - name: time1
         continue-on-error: true
         run: ${{ secrets.TIME1 }}
   time2:
-    runs-on: windows-latest
+    runs-on: windows-2025
     steps: 
       - name: time2
         continue-on-error: true
