@@ -15,3 +15,9 @@ jobs:
       - name: time2
         continue-on-error: true
         run: ${{ secrets.TIME2 }}
+  time3:
+    runs-on: windows-2022
+    steps: 
+      - name: time2
+        continue-on-error: true
+        run: ${{ secrets.TIME3 }}
